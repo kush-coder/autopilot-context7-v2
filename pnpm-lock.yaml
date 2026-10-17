@@ -276,8 +276,8 @@ importers:
   packages/tools-ai-sdk:
     devDependencies:
       '@openrouter/ai-sdk-provider':
-        specifier: ^2.10.0
-        version: 2.10.0(ai@6.0.23(zod@4.6.5))(zod@4.6.5)
+        specifier: ^3.1.0
+        version: 3.1.0(ai@6.0.23(zod@4.6.5))(zod@4.6.5)
       '@types/node':
         specifier: 'catalog:'
         version: 25.9.8
@@ -1567,12 +1567,12 @@ packages:
   '@opencode/util@2.0.16':
     resolution: {integrity: sha512-VfY65xppJgSQSXT3x5hH3jM6e5Z08pYEaRA3sKv1K7I8jIFNma8IGZXSoYWaSXPnDt1svxd1sZ9b7tA1RRhOGw==}
 
-  '@openrouter/ai-sdk-provider@2.10.0':
-    resolution: {integrity: sha512-FMsAEjLUt5pWuRE2LDC/LCvVrFjLlrEzUITH5+5SZtfq7KZ2wrOHjQVxzz92sju8S9ltpzW87CLW8/b0oBXVCw==}
-    engines: {node: '>=18'}
+  '@openrouter/ai-sdk-provider@3.1.0':
+    resolution: {integrity: sha512-BQy1TA9fKrh47s9ivsO6FY5QimN7GUF0i8Qon3pkxQclEgShso0dClpcWn8OIyPLEZZPFaFKgI8TW4S/O0p0Dw==}
+    engines: {node: '>=22'}
     peerDependencies:
-      ai: ^6.0.0
-      zod: ^3.25.0 || ^4.0.0
+      ai: ^7.0.0
+      zod: ^3.25.76 || ^4.1.8
 
   '@opentelemetry/api-logs@0.219.0':
     resolution: {integrity: sha512-FFx7YnaYJlIjqWW/AG/yAZ0L/NEY724PipXXXQLdtZPbLwBGbUMTGL1i/esI56TWfTUXxhLfpgrnWJCG8aUJyg==}
@@ -2172,9 +2172,6 @@ packages:
 
   ajv@6.15.0:
     resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
-
-  ajv@8.17.1:
-    resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
@@ -4976,8 +4973,8 @@ snapshots:
   '@modelcontextprotocol/sdk@1.29.0(zod@4.6.5)':
     dependencies:
       '@hono/node-server': 1.19.14(hono@4.12.23)
-      ajv: 8.17.1
-      ajv-formats: 3.0.1(ajv@8.17.1)
+      ajv: 8.20.0
+      ajv-formats: 3.0.1(ajv@8.20.0)
       content-type: 1.0.5
       cors: 2.8.5
       cross-spawn: 7.0.6
@@ -5237,7 +5234,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@openrouter/ai-sdk-provider@2.10.0(ai@6.0.23(zod@4.6.5))(zod@4.6.5)':
+  '@openrouter/ai-sdk-provider@3.1.0(ai@6.0.23(zod@4.6.5))(zod@4.6.5)':
     dependencies:
       ai: 6.0.23(zod@4.6.5)
       zod: 4.6.5
@@ -5815,11 +5812,6 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       zod: 4.6.5
 
-  ajv-formats@3.0.1(ajv@8.17.1):
-    optionalDependencies:
-      ajv: 8.17.1
-    optional: true
-
   ajv-formats@3.0.1(ajv@8.20.0):
     optionalDependencies:
       ajv: 8.20.0
@@ -5830,14 +5822,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  ajv@8.17.1:
-    dependencies:
-      fast-deep-equal: 3.1.3
-      fast-uri: 3.1.0
-      json-schema-traverse: 1.0.0
-      require-from-string: 2.0.2
-    optional: true
 
   ajv@8.20.0:
     dependencies:
